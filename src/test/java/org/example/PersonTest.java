@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example._2023_02_24.Person;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -10,6 +12,11 @@ class PersonTest {
 
     private final Person person = new Person();
     private List<Integer> list = new LinkedList<>();
+
+    @AfterEach
+    void setUp() {
+        person.getList().clear();
+    }
 
     @Test
     void getSumTest() {
@@ -26,7 +33,10 @@ class PersonTest {
     }
 
     @Test
-    public void save(int el) {
+    public void saveTest() {
+        int expectedSize = 1;
 
+        person.save(1);
+        Assertions.assertEquals(expectedSize, person.getList().size());
     }
 }
