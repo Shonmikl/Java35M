@@ -3,9 +3,13 @@ package org.example;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.LinkedList;
+import java.util.List;
+
 class PersonTest {
 
     private final Person person = new Person();
+    private List<Integer> list = new LinkedList<>();
 
     @Test
     void getSumTest() {
@@ -23,6 +27,6 @@ class PersonTest {
 
     @Test
     public void save(int el) {
-        list.add(el);
+
     }
 }
