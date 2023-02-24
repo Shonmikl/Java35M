@@ -1,10 +1,11 @@
-package org.example._2023_02_24.unit.test.dummyTest;//package javaProf.unit.mockito.test.dummyTest;
+//package org.example._2023_02_24.unit.test.dummyTest;
 //
-//import static org.junit.jupiter.api.Assertions.*;
-//
-//import javaProf.unit.mockito.dummy.*;
-//import org.junit.jupiter.api.Test;
+//import org.example._2023_02_24.unit.dummy.*;
+//import org.junit.Test;
 //import org.mockito.Mockito;
+//
+//import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertThrows;
 //
 //public class DummyObjectDemo {
 //

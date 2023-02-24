@@ -1,14 +1,12 @@
 package org.example._2023_02_24.unit.mock;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class SimpleTradingService implements TradingService {
 
 	TradeRepository tradeRepository;
 	AuditService auditService;
-
-	public SimpleTradingService(TradeRepository tradeRepository, AuditService auditService) {
-		this.tradeRepository = tradeRepository;
-		this.auditService = auditService;
-	}
 
 	@Override
 	public Long createTrade(Trade trade) throws CreateTradeException {
