@@ -4,18 +4,18 @@ public class ReactorCoolingSystem {
 
     private Thermometer thermometer;
     private double temperatureThreshold;
-    private boolean on;
+    private boolean isOn;
 
     public ReactorCoolingSystem() {
-        on = false;
+        isOn = false;
     }
 
     public void checkReactorCoolingSystem() {
-        this.on = (thermometer.getTemperature() >= temperatureThreshold);
+        this.isOn = (thermometer.getTemperature() >= temperatureThreshold);
     }
 
     public boolean isOn() {
-        return on;
+        return isOn;
     }
 
     public void setThermometer(Thermometer thermometer) {

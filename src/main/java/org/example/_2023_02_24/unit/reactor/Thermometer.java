@@ -1,8 +1,13 @@
 package org.example._2023_02_24.unit.reactor;
 
-public class Thermometer {
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
+public class Thermometer {
     private double temperature;
+
     private Sensor sensor;
 
     public double getTemperature() {
@@ -10,17 +15,5 @@ public class Thermometer {
             throw new RuntimeException("Sensor is blocked");
         }
         return temperature;
-    }
-
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
-    }
-
-    public Sensor getSensor() {
-        return sensor;
-    }
-
-    public void setSensor(Sensor sensor) {
-        this.sensor = sensor;
     }
 }
