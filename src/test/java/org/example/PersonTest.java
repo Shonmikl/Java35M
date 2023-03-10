@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example._2023_02_24.Person;
+import org.example.kotiki._2023_02_24.Person;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
