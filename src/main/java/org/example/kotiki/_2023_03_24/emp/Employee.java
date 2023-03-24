@@ -13,6 +13,7 @@ public class Employee {
     @Getter
     @Setter
     private double salary;
+
     public String department;
 
     public Employee() {

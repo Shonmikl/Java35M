@@ -1,7 +1,11 @@
 package org.example.kotiki._2023_03_24.annot;
 
 import java.lang.annotation.*;
-import java.util.StringTokenizer;
+
+/**
+ * На дом!
+ * Сделать свою аннотацию "Setter"
+ */
 
 public class Test2 {
     public static void main(String[] args) throws ClassNotFoundException {
